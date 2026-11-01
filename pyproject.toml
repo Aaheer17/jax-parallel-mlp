@@ -1,0 +1,18 @@
+[project]
+name = "jax-parallel-mlp"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "flax>=0.12.12",
+    "jax>=0.12.0.1",
+    "matplotlib>=3.11.2",
+    "optax>=0.2.8",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
